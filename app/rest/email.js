@@ -22,3 +22,8 @@ exports.send = function(req, res) {
 
     return res.json(data);
 };
+
+exports.hook = function(req, res) {
+    console.log(req.body);
+    return res.json(req.body);
+};

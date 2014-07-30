@@ -19,6 +19,7 @@ router.use(function(req, res, next) {
 });
 
 router.get('/send', email.send);
+router.post('/hook', email.hook);
 
 app.use('/api', router);
 
